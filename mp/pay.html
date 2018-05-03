@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>充值</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <meta name="description" content="出门看脸|扫码支付|刷卡支付|识脸支付|智慧识脸">
+
+    <link rel="stylesheet" href="./lib/weui.min.css">
+    <link rel="stylesheet" href="./css/jquery-weui.css">
+    <link rel="stylesheet" href="css/demos.css">
+    <style>
+        .placeholder {
+            margin: 5px;
+            padding: 0 10px;
+            background-color: #ebebeb;
+            height: 3.3em;
+            line-height: 3.3em;
+            text-align: center;
+            color: #cfcfcf;
+        }
+    </style>
+</head>
+
+<body ontouchstart>
+<div class="weui-cells" style="margin-top: 0.6em;margin-bottom: 1.0em">
+    <label class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>当前余额</p>
+        </div>
+        <div class="weui-cell__ft">
+            <p>0.00元</p>
+        </div>
+    </label>
+</div>
+<div class="weui-cells__title">充值金额</div>
+<div class="weui-flex">
+    <div class="weui-flex__item"><div class="placeholder">充￥200</div></div>
+    <div class="weui-flex__item"><div class="placeholder" style="background-color:#09bb07;color: white">充￥100</div></div>
+</div>
+<div class="weui-flex">
+    <div class="weui-flex__item"><div class="placeholder">充￥50</div></div>
+    <div class="weui-flex__item"><div class="placeholder">充￥20</div></div>
+</div>
+
+<div class="weui-cells weui-cells_radio" style="margin-top: 2.16em;margin-bottom: 6.3em">
+    <label class="weui-cell weui-check__label" for="x11">
+        <div class="weui-cell__bd">
+            <p>微信支付</p>
+        </div>
+        <div class="weui-cell__ft">
+            <input type="radio" class="weui-check" name="radio1" id="x11" checked="checked">
+            <span class="weui-icon-checked"></span>
+        </div>
+    </label>
+</div>
+
+<div class="weui-btn-area">
+    <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">确定</a>
+</div>
+
+<div class="weui-tabbar">
+    <a href="about.html" class="weui-tabbar__item weui-bar__item--on">
+        <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_button.png" alt="">
+        </div>
+        <p class="weui-tabbar__label">首页</p>
+    </a>
+    <a href="desc.html" class="weui-tabbar__item">
+        <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_msg.png" alt="">
+        </div>
+        <p class="weui-tabbar__label">介绍</p>
+    </a>
+    <a href="pay.html" class="weui-tabbar__item">
+        <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_article.png" alt="">
+        </div>
+        <p class="weui-tabbar__label">充值</p>
+    </a>
+    <a href="#tab4" class="weui-tabbar__item">
+        <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_cell.png" alt="">
+        </div>
+        <p class="weui-tabbar__label">我</p>
+    </a>
+</div>
+
+<script src="./lib/jquery-2.1.4.js"></script>
+<script src="./lib/fastclick.js"></script>
+<script>
+    $(function () {
+        FastClick.attach(document.body);
+    });
+</script>
+<script src="./js/jquery-weui.js"></script>
+
+</body>
+</html>
