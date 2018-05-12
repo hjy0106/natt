@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>提现</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="./lib/weui.min.css">
+    <link rel="stylesheet" href="./css/jquery-weui.css">
+    <link rel="stylesheet" href="css/demos.css">
+    <style>
+
+    </style>
+</head>
+
+<body ontouchstart>
+
+<div style="background-color: rgba(169,169,169,0.05);margin: 10px">
+    <div class="weui-cells__title" style="padding-top: 15px">提现金额</div>
+    <div style="margin-right: 20px" class="weui-cell weui-cell_vcode">
+        <div class="weui-cell__hd">
+            <label style="font-size: 36px;width: auto" class="weui-label">￥</label>
+        </div>
+        <div style="font-size: 36px;" class="weui-cell__bd">
+            <input style="border-bottom: 1px solid #48de4f" class="weui-input" type="number">
+        </div>
+    </div>
+    <div class="weui-cells__title">当前可提现余额200.00元，<a href="#">全部提现</a></div>
+
+    <div style="padding-bottom: 25px;padding-top: 20px" class="weui-btn-area">
+        <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">确定</a>
+    </div>
+</div>
+
+
+<div class="weui-tabbar">
+    <a href="about.html" class="weui-tabbar__item weui-bar__item--on">
+        <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_button.png" alt="">
+        </div>
+        <p class="weui-tabbar__label">首页</p>
+    </a>
+    <a href="desc.html" class="weui-tabbar__item">
+        <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_msg.png" alt="">
+        </div>
+        <p class="weui-tabbar__label">介绍</p>
+    </a>
+    <a href="pay.html" class="weui-tabbar__item">
+        <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_article.png" alt="">
+        </div>
+        <p class="weui-tabbar__label">充值</p>
+    </a>
+    <a href="#tab4" class="weui-tabbar__item">
+        <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_cell.png" alt="">
+        </div>
+        <p class="weui-tabbar__label">我</p>
+    </a>
+</div>
+
+<script src="./lib/jquery-2.1.4.js"></script>
+<script src="./lib/fastclick.js"></script>
+<script>
+    $(function () {
+        FastClick.attach(document.body);
+    });
+</script>
+<script src="./js/jquery-weui.js"></script>
+
+</body>
+</html>
